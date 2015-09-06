@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Code for the Helm News feature.
+ * Code for the Proud News feature.
  */
 
 include_once 'proud_news.features.inc';

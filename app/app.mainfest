@@ -1,4 +1,4 @@
-name = Helm News
+name = Proud News
 description = The News app will help users find the most current information and releases about your organization.  It also allows visitors to subscribe to specific News Categories, or even a specific News Post if they want to stay up-to-date with a quickly changing situation.  We can also integrate with other newsletter systems (Mailchimp, MyEmma, Constant Contact) if requested.
 machine_name = helm_news
 version = 7.x-1.0-beta1

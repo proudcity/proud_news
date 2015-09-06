@@ -1,7 +1,7 @@
-name = Helm News
+name = Proud News
 description = Creates the Article content type and related views
 core = 7.x
-package = Helm
+package = Proud
 dependencies[] = angular_media
 dependencies[] = ctools
 dependencies[] = entityreference
