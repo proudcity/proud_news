@@ -55,8 +55,8 @@ function proud_news_display_views_default_views() {
   $handler->display->display_options['fields']['created']['label'] = '';
   $handler->display->display_options['fields']['created']['element_type'] = 'h6';
   $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['created']['date_format'] = 'helm_date_formats_date_short';
-  $handler->display->display_options['fields']['created']['second_date_format'] = 'helm_date_formats_date_short';
+  $handler->display->display_options['fields']['created']['date_format'] = 'proud_date_formats_date_short';
+  $handler->display->display_options['fields']['created']['second_date_format'] = 'proud_date_formats_date_short';
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';

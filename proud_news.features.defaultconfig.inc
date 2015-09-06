@@ -26,7 +26,7 @@ function proud_news_defaultconfig_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_article_pattern';
-  $strongarm->value = 'news/[current-date:helm_date_formats_date_mmddyyyy]/[node:title]';
+  $strongarm->value = 'news/[current-date:proud_date_formats_date_mmddyyyy]/[node:title]';
   $export['pathauto_node_article_pattern'] = $strongarm;
 
   return $export;

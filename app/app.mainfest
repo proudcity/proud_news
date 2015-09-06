@@ -1,6 +1,6 @@
 name = Proud News
 description = The News app will help users find the most current information and releases about your organization.  It also allows visitors to subscribe to specific News Categories, or even a specific News Post if they want to stay up-to-date with a quickly changing situation.  We can also integrate with other newsletter systems (Mailchimp, MyEmma, Constant Contact) if requested.
-machine_name = helm_news
+machine_name = proud_news
 version = 7.x-1.0-beta1
 author = Albatross Digital
 author_url = http://albatrossdigital.com
@@ -17,7 +17,7 @@ dependencies[entityreference] = entityreference 7.x-1.1
 dependencies[entity] = entity 7.x-1.6
 dependencies[defaultconfig] = defaultconfig 7.x-1.0-alpha9
 dependencies[strongarm] = strongarm 7.x-2.0
-downloadables[helm_news 7.x-1.0-beta1] = http://apps.albatrossdigital.com/sites/apps.albatrossdigital.com/files/helm_news.tar_.gz
+downloadables[proud_news 7.x-1.0-beta1] = http://apps.albatrossdigital.com/sites/apps.albatrossdigital.com/files/proud_news.tar_.gz
 downloadables[angular_media 7.x-1.0-alpha1] = http://ftp.drupal.org/files/projects/angular_media-7.x-1.0-alpha1.tar.gz
 downloadables[creative_commons 7.x-1.2] = http://ftp.drupal.org/files/projects/creative_commons-7.x-1.2.tar.gz
 downloadables[features 7.x-2.5] = http://ftp.drupal.org/files/projects/features-7.x-2.5.tar.gz

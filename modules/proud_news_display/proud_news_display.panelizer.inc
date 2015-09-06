@@ -30,7 +30,7 @@ function proud_news_display_panelizer_defaults() {
   $panelizer->link_to_entity = TRUE;
   $panelizer->extra = array();
   $display = new panels_display();
-  $display->layout = 'helm_full_page';
+  $display->layout = 'proud_full_page';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -161,7 +161,7 @@ function proud_news_display_panelizer_defaults() {
   $pane->shown = TRUE;
   $pane->access = array();
   $pane->configuration = array(
-    'format' => 'helm_date_formats_date_short',
+    'format' => 'proud_date_formats_date_short',
     'context' => 'panelizer',
     'override_title' => 1,
     'override_title_text' => '',
@@ -355,7 +355,7 @@ function proud_news_display_panelizer_defaults() {
   $panelizer->link_to_entity = TRUE;
   $panelizer->extra = array();
   $display = new panels_display();
-  $display->layout = 'helm_teaser';
+  $display->layout = 'proud_teaser';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -476,7 +476,7 @@ function proud_news_display_panelizer_defaults() {
   $pane->shown = TRUE;
   $pane->access = array();
   $pane->configuration = array(
-    'format' => 'helm_date_formats_date_short',
+    'format' => 'proud_date_formats_date_short',
     'context' => 'panelizer',
     'override_title' => 1,
     'override_title_text' => '',
