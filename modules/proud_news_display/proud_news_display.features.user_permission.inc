@@ -10,51 +10,51 @@
 function proud_news_display_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: 'administer panelizer node article breadcrumbs'.
-  $permissions['administer panelizer node article breadcrumbs'] = array(
-    'name' => 'administer panelizer node article breadcrumbs',
+  // Exported permission: 'administer panelizer node news breadcrumbs'.
+  $permissions['administer panelizer node news breadcrumbs'] = array(
+    'name' => 'administer panelizer node news breadcrumbs',
     'roles' => array(),
     'module' => 'panelizer',
   );
 
-  // Exported permission: 'administer panelizer node article content'.
-  $permissions['administer panelizer node article content'] = array(
-    'name' => 'administer panelizer node article content',
+  // Exported permission: 'administer panelizer node news content'.
+  $permissions['administer panelizer node news content'] = array(
+    'name' => 'administer panelizer node news content',
     'roles' => array(),
     'module' => 'panelizer',
   );
 
-  // Exported permission: 'administer panelizer node article context'.
-  $permissions['administer panelizer node article context'] = array(
-    'name' => 'administer panelizer node article context',
+  // Exported permission: 'administer panelizer node news context'.
+  $permissions['administer panelizer node news context'] = array(
+    'name' => 'administer panelizer node news context',
     'roles' => array(),
     'module' => 'panelizer',
   );
 
-  // Exported permission: 'administer panelizer node article defaults'.
-  $permissions['administer panelizer node article defaults'] = array(
-    'name' => 'administer panelizer node article defaults',
+  // Exported permission: 'administer panelizer node news defaults'.
+  $permissions['administer panelizer node news defaults'] = array(
+    'name' => 'administer panelizer node news defaults',
     'roles' => array(),
     'module' => 'panelizer',
   );
 
-  // Exported permission: 'administer panelizer node article layout'.
-  $permissions['administer panelizer node article layout'] = array(
-    'name' => 'administer panelizer node article layout',
+  // Exported permission: 'administer panelizer node news layout'.
+  $permissions['administer panelizer node news layout'] = array(
+    'name' => 'administer panelizer node news layout',
     'roles' => array(),
     'module' => 'panelizer',
   );
 
-  // Exported permission: 'administer panelizer node article overview'.
-  $permissions['administer panelizer node article overview'] = array(
-    'name' => 'administer panelizer node article overview',
+  // Exported permission: 'administer panelizer node news overview'.
+  $permissions['administer panelizer node news overview'] = array(
+    'name' => 'administer panelizer node news overview',
     'roles' => array(),
     'module' => 'panelizer',
   );
 
-  // Exported permission: 'administer panelizer node article settings'.
-  $permissions['administer panelizer node article settings'] = array(
-    'name' => 'administer panelizer node article settings',
+  // Exported permission: 'administer panelizer node news settings'.
+  $permissions['administer panelizer node news settings'] = array(
+    'name' => 'administer panelizer node news settings',
     'roles' => array(),
     'module' => 'panelizer',
   );

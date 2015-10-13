@@ -10,13 +10,19 @@
 function proud_news_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-article-body'
-  $field_instances['node-article-body'] = array(
-    'bundle' => 'article',
+  // Exported field_instance: 'node-news-body'
+  $field_instances['node-news-body'] = array(
+    'bundle' => 'news',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'card' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -31,6 +37,12 @@ function proud_news_field_default_field_instances() {
           'trim_length' => 600,
         ),
         'type' => 'text_summary_or_trimmed',
+        'weight' => 0,
+      ),
+      'list' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
       'live_results_search' => array(
@@ -68,81 +80,22 @@ function proud_news_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 6,
+      'weight' => 3,
     ),
   );
 
-  // Exported field_instance: 'node-article-field_article_category'
-  $field_instances['node-article-field_article_category'] = array(
-    'bundle' => 'article',
-    'default_value' => NULL,
+  // Exported field_instance: 'node-news-field_attachment'
+  $field_instances['node-news-field_attachment'] = array(
+    'bundle' => 'news',
     'deleted' => 0,
     'description' => '',
     'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 3,
-      ),
-      'featured' => array(
+      'card' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
       ),
-      'live_results_search' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_article_category',
-    'label' => 'Category',
-    'required' => 0,
-    'settings' => array(
-      'behaviors' => array(
-        'taxonomy-index' => array(
-          'status' => TRUE,
-        ),
-      ),
-      'select2_integration' => array(
-        'styling' => array(
-          'dropdownAutoWidth' => 0,
-          'placeholder' => '',
-        ),
-        'use_select2' => 0,
-      ),
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'use_select2' => FALSE,
-      ),
-      'type' => 'options_select',
-      'weight' => 2,
-    ),
-  );
-
-  // Exported field_instance: 'node-article-field_attachment'
-  $field_instances['node-article-field_attachment'] = array(
-    'bundle' => 'article',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
       'default' => array(
         'label' => 'above',
         'module' => 'file',
@@ -151,6 +104,12 @@ function proud_news_field_default_field_instances() {
         'weight' => 2,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'list' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -212,16 +171,22 @@ function proud_news_field_default_field_instances() {
         'tabs' => array(),
       ),
       'type' => 'file_angular_media',
-      'weight' => 8,
+      'weight' => 5,
     ),
   );
 
-  // Exported field_instance: 'node-article-field_media'
-  $field_instances['node-article-field_media'] = array(
-    'bundle' => 'article',
+  // Exported field_instance: 'node-news-field_media'
+  $field_instances['node-news-field_media'] = array(
+    'bundle' => 'news',
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'card' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'file',
@@ -230,6 +195,12 @@ function proud_news_field_default_field_instances() {
         'weight' => -1,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'list' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -291,17 +262,100 @@ function proud_news_field_default_field_instances() {
         ),
       ),
       'type' => 'file_angular_media',
-      'weight' => 3,
+      'weight' => 2,
     ),
   );
 
-  // Exported field_instance: 'node-article-field_subtitle'
-  $field_instances['node-article-field_subtitle'] = array(
-    'bundle' => 'article',
+  // Exported field_instance: 'node-news-field_news_category'
+  $field_instances['node-news-field_news_category'] = array(
+    'bundle' => 'news',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'card' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 3,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'list' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'live_results_search' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_news_category',
+    'label' => 'Category',
+    'required' => 0,
+    'settings' => array(
+      'behaviors' => array(
+        'taxonomy-index' => array(
+          'status' => TRUE,
+        ),
+      ),
+      'select2_integration' => array(
+        'styling' => array(
+          'dropdownAutoWidth' => 0,
+          'placeholder' => '',
+        ),
+        'use_select2' => 0,
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'use_select2' => FALSE,
+      ),
+      'type' => 'options_select',
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance: 'node-news-field_subtitle'
+  $field_instances['node-news-field_subtitle'] = array(
+    'bundle' => 'news',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'card' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'text',
@@ -310,6 +364,12 @@ function proud_news_field_default_field_instances() {
         'weight' => 4,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'list' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
